@@ -1,0 +1,380 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 1rem;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style-type: none;
+}
+
+h2 {
+  margin: 0;
+}
+
+h6 {
+  margin: 0;
+}
+
+h1, h6 {
+  font-family: Shrikhand, Roboto, sans-serif;
+}
+
+body, html {
+  font-family: 'Roboto', sans-serif;
+}
+
+@-webkit-keyframes grow {
+  0%, 100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+  50% {
+    -webkit-transform: scaleY(1.8);
+    transform: scaleY(1.8);
+  }
+}
+
+@keyframes grow {
+  0%, 100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+  50% {
+    -webkit-transform: scaleY(1.8);
+    transform: scaleY(1.8);
+  }
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.loader {
+  background: url("/assets/images/restaurants/menu-palette-gout.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
+  font-family: Shrikhand, sans-serif;
+  font-size: x-large;
+  vertical-align: middle;
+  text-align: center;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  -webkit-animation: loader 1s ease-in-out 3s forwards;
+          animation: loader 1s ease-in-out 3s forwards;
+}
+
+.loader__food {
+  vertical-align: middle;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
+
+@media screen and (min-width: 768px) {
+  .loader__food {
+    top: 40%;
+    left: 35%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .loader__food {
+    top: 40%;
+    left: 45%;
+  }
+}
+
+.loader__food span {
+  display: inline-block;
+  width: 5px;
+  height: 20px;
+  padding-right: 1em;
+}
+
+.loader__fork {
+  vertical-align: middle;
+  color: #FF79DA;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-animation: rotate 1s linear infinite;
+          animation: rotate 1s linear infinite;
+}
+
+.loader__food span:nth-child(1) {
+  -webkit-animation: grow 1s ease-in-out infinite;
+          animation: grow 1s ease-in-out infinite;
+}
+
+.loader__food span:nth-child(2) {
+  -webkit-animation: grow 1s ease-in-out 0.15s infinite;
+          animation: grow 1s ease-in-out 0.15s infinite;
+}
+
+.loader__food span:nth-child(3) {
+  -webkit-animation: grow 1s ease-in-out 0.15s infinite;
+          animation: grow 1s ease-in-out 0.15s infinite;
+}
+
+.loader__food span:nth-child(4) {
+  -webkit-animation: grow 1s ease-in-out 0.15s infinite;
+          animation: grow 1s ease-in-out 0.15s infinite;
+}
+
+.loader__food span:nth-child(5) {
+  -webkit-animation: grow 1s ease-in-out 0.15s infinite;
+          animation: grow 1s ease-in-out 0.15s infinite;
+}
+
+.loader__food span:nth-child(6) {
+  -webkit-animation: grow 1s ease-in-out 0.15s infinite;
+          animation: grow 1s ease-in-out 0.15s infinite;
+}
+
+.loader__food span:nth-child(7) {
+  -webkit-animation: grow 1s ease-in-out 0.15s infinite;
+          animation: grow 1s ease-in-out 0.15s infinite;
+}
+
+.loader__food span:nth-child(8) {
+  -webkit-animation: grow 1s ease-in-out 0.15s infinite;
+          animation: grow 1s ease-in-out 0.15s infinite;
+}
+
+.about {
+  background: #f6f6f6;
+  text-align: center;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.about h2 {
+  font-weight: bold;
+}
+
+.about p {
+  color: #4d4d4d;
+}
+
+.main__header h1 {
+  text-align: center;
+}
+
+.howto__title {
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 1280px) {
+  .howto__title {
+    position: absolute;
+    top: 350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 60%;
+  }
+}
+
+.number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #9356DC;
+  color: #fff;
+  border-radius: 50%;
+  border: 2px solid #9356DC;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .number {
+    right: 0;
+    top: -15px;
+  }
+}
+
+.howto__icon i {
+  color: #b2b2b2;
+  margin: 0 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .howto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .howto {
+    padding: 0 20%;
+  }
+}
+
+footer {
+  background-color: #353535;
+  padding: 25px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Shrikhand", "sans-serif";
+  padding: 5px 0 20px 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  padding: 5px 0 5px 0;
+}
+
+ul li a {
+  color: white;
+}
+
+.fa-utensils {
+  margin-right: 12px;
+}
+
+.fa-hands-helping {
+  margin-right: 5px;
+}
+/*# sourceMappingURL=main.css.map */
