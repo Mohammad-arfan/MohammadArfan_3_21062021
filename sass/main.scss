@@ -3,8 +3,10 @@
 @import 'Utils/mixins';
 @import 'Utils/keyframes';
 @import 'Utils/maps', 'Utils/functions';
-
-@import 'layouts/loader','layouts/about','layouts/header', 'layouts/howto','layouts/footer';
+@import "Components/maps", "Components/btn-about", "Components/howto-btn",
+ "Components/btn-card", "Components/heart-icon", "Components/menus-header";
+@import 'layouts/loader','layouts/about','layouts/header',
+         'layouts/howto','layouts/footer','layouts/resto','layouts/menu';
 
 
 

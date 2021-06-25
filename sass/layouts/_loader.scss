@@ -1,5 +1,5 @@
 .loader {
-  background: url("/assets/images/restaurants/menu-palette-gout.jpg");
+  background: $linear-gradient;
   background-size: cover;
 
   width: 100%;
@@ -38,7 +38,7 @@
 }
 .loader__fork {
   vertical-align: middle;
-  color:$color-secondary;
+  color:#fff;
   position: absolute;
   top:50%;
   left: 50%;
