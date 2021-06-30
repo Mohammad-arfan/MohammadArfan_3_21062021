@@ -506,7 +506,10 @@ body, html {
   -webkit-animation: grow 1s ease-in-out 0.15s infinite;
           animation: grow 1s ease-in-out 0.15s infinite;
 }
-
+.loader__food span:nth-child(9) {
+  -webkit-animation: grow 1s ease-in-out 0.15s infinite;
+          animation: grow 1s ease-in-out 0.15s infinite;
+}
 .about {
   background: #f6f6f6;
   text-align: center;
