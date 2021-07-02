@@ -23,11 +23,7 @@
   }
 }
 .operation__steps li {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: nowrap;
+ @include compose-com;
   padding: 25px;
   margin: 15px 20px 15px 30px;
   border-radius: 20px;
@@ -45,9 +41,6 @@ cursor: pointer;
 }
 
 
-.operation__steps li:hover .fas {
-  color: #9356dc;
-}
 .operation__steps--number {
   background-color: $color-primary;
   color: white;

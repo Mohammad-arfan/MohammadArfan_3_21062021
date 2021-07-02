@@ -97,13 +97,14 @@ footer {
 
 h3 {
   font-family: "Shrikhand", "sans-serif";
-  padding: 5px 0 20px 0;
+  padding: 5px 0 10px 10px;
   font-size: 1.2rem;
   font-weight: 500;
 }
 
 ul {
   list-style-type: none;
+  padding-left: 10px;
 }
 
 ul li {
@@ -182,10 +183,6 @@ ul li a {
 
 .operation__steps li:hover {
   background: #f2eafb;
-}
-
-.operation__steps li:hover .fas {
-  color: #9356dc;
 }
 
 .operation__steps--number {
@@ -477,34 +474,6 @@ ul li a {
   background-color: #ae80e5;
   background-blend-mode: lighten;
   box-shadow: 4px 4px 6px #000;
-}
-
-.howto__button {
-  margin: 0 20px 20px 20px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background: #f6f6f6;
-  border: 5px solid #f6f6f6;
-  border-radius: 10px;
-  box-shadow: 4px 4px 6px #fff;
-  font-weight: bold;
-  box-shadow: 4px 4px 6px #e9e9e9;
-}
-
-@media screen and (min-width: 768px) {
-  .howto__button {
-    margin: 20px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .howto__button {
-    margin: 70px 0;
-  }
 }
 
 .new {
