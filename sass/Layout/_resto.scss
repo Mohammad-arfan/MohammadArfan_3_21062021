@@ -12,10 +12,7 @@
 .card {
   @include card;
   @include tablet {
-    width: 45%;
-  }
-  &:hover{
-   box-shadow: $color-secondary  3px 3px 10px 2px;
+    width: 40%;
   }
 }
 .card img {
@@ -27,12 +24,11 @@
   flex-direction: column;
   @include tablet {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-flow: row wrap;
   }
   @include desktop {
-    padding: 0 10%;
-   
+    padding: 0 5%;
   }
 }
 .heart {
