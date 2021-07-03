@@ -17,11 +17,12 @@
   background-image: $linear-gradient;
   border: 1px solid transparent;
   border-radius: 30px;
-  padding: 10px 5px;
+  padding: 10px 20px;
   color: #fff;
   font-weight: bold;
-  box-shadow: 4px 4px 6px #aaa;
+  box-shadow: 4px 4px 15px #aaa;
   cursor: pointer;
+  
 }
 @mixin compose-com{
    display: flex;
@@ -79,22 +80,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 15px 20px;
 }
 @mixin meals {
   background-color: #fff;
   border-radius: 15px;
-  margin: 10px;
-  padding: 10px;
+  margin: 15px;
+  padding: 15px;
   box-shadow: 4px 4px 6px #aaa;
   position: relative;
   cursor: pointer;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  transition: padding-right 450ms ease-in-out;
+  transition: padding-right 550ms ease-in-out;
   &:hover {
-    padding-right: 75px;
+    padding-right: 80px;
   }
   &:hover .cross {
     opacity: 1;
@@ -102,6 +103,7 @@
   }
   &:hover .fa-check-circle {
     transform: rotate(360deg) ;
+    
   }
 }
 
@@ -110,8 +112,8 @@
   justify-content: center;
   align-items: center;
   background-color: $color-tertiary;
-  width: 50px;
-  height: 63px;
+  width: 65px;
+  height: 75px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   position: absolute;

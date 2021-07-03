@@ -9,9 +9,10 @@
 
 @include desktop {
     h2 {
-  padding: 20px;
+  text-align: center;
 }
 }
+ 
 
  @include tablet {
   .operation__steps {
@@ -22,6 +23,7 @@
     align-items: center;
   }
 }
+
 .operation__steps li {
  @include compose-com;
   padding: 25px;
@@ -49,7 +51,10 @@ cursor: pointer;
   margin-left: -40px;
 }
 .operation__steps--icon {
-  color: grey;
+  color: #6b6868;
   font-size: 1.2rem;
   margin-left: 20px;
+  &:hover{
+    color: $color-primary;
+  }
 }

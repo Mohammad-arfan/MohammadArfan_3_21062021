@@ -1,8 +1,9 @@
 .btn__about button{
+  transition: all .3s ease-in-out;
+  transform: scale(1);
   @include btn-about;
   &:hover {
     background-color: lighten(#9356dc, 10%);
-    background-blend-mode: lighten;
-    box-shadow: 4px 4px 6px #000;
+  transform: scale(1.1);
   }
 }
