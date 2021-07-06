@@ -34,7 +34,7 @@
 @mixin btn-card {
   color: #008766;
   background: $color-tertiary;
-  border: 5px solid $color-tertiary;
+  padding: 4px;
   border-radius: 5px;
   position: absolute;
   right: 1%;
@@ -94,6 +94,8 @@
   text-overflow: ellipsis;
   overflow: hidden;
   transition: padding-right 550ms ease-in-out;
+   animation: fadein 3s ease-in-out;
+  
   &:hover {
     padding-right: 80px;
   }

@@ -9,20 +9,19 @@
   }
 }
 .starter {
-  animation: fadein 3s ease-in-out;
-  
+ 
   @include desktop {
     width: 400px;
   }
 }
 .dish {
-  animation: fadein 5s ease-in-out;
+ 
   @include desktop {
     width: 400px;
   }
 }
 .dessert {
-  animation: fadein 6s ease-in-out;
+  
   @include desktop {
     width: 400px;
   }

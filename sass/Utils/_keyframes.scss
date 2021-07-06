@@ -5,16 +5,16 @@
   }
 
   50%{
-    -webkit-transform: scaleY(1.8);
+transform: scaleY(1.8);
     transform: scaleY(1.8);
   }
 }
 @keyframes rotate {
   from{
-    -webkit-transform: rotate(0deg);
+   transform: rotate(0deg);
   }
   to{
-    -webkit-transform: rotate(360deg);
+   transform: rotate(360deg);
   }
 }
 @keyframes loader {
@@ -31,9 +31,11 @@
 @keyframes fadein {
   from {
     opacity:0;
+    transform: translateY(30px);
   }
   to {
     opacity:1;
+    transform: translateY(0px);
   }
 }
 

@@ -40,15 +40,16 @@ body, html {
   }
   50% {
     transform: scaleY(1.8);
+    transform: scaleY(1.8);
   }
 }
 
 @keyframes rotate {
   from {
-    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -67,9 +68,11 @@ body, html {
 @keyframes fadein {
   from {
     opacity: 0;
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
+    transform: translateY(0px);
   }
 }
 
@@ -392,28 +395,16 @@ ul li a {
   }
 }
 
-.starter {
-  animation: fadein 3s ease-in-out;
-}
-
 @media screen and (min-width: 1280px) {
   .starter {
     width: 400px;
   }
 }
 
-.dish {
-  animation: fadein 5s ease-in-out;
-}
-
 @media screen and (min-width: 1280px) {
   .dish {
     width: 400px;
   }
-}
-
-.dessert {
-  animation: fadein 6s ease-in-out;
 }
 
 @media screen and (min-width: 1280px) {
@@ -489,7 +480,7 @@ ul li a {
 .new {
   color: #008766;
   background: #99E2D0;
-  border: 5px solid #99E2D0;
+  padding: 4px;
   border-radius: 5px;
   position: absolute;
   right: 1%;
@@ -506,8 +497,7 @@ ul li a {
   display: inline-block;
   opacity: 1;
   background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  background-clip: text;
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
@@ -561,6 +551,7 @@ ul li a {
   text-overflow: ellipsis;
   overflow: hidden;
   transition: padding-right 550ms ease-in-out;
+  animation: fadein 3s ease-in-out;
 }
 
 .meals:hover {
