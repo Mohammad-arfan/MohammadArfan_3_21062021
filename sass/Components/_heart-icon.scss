@@ -1,13 +1,12 @@
 .fill {
-  color: #363535;
+  color: #363535; 
   cursor: pointer;
+  transition: all .1s ease-in-out;
   &:hover {
-    animation: fill 0.3s ease-in-out;
+    animation: fill 0.3s alternate;
     display: inline-block;
     opacity: 1;
-    background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-    background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  
+    background:linear-gradient(180deg, $color-primary 0%,$color-secondary 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
     font-weight: bold;

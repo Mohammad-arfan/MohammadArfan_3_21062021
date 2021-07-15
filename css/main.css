@@ -79,6 +79,7 @@ body, html {
 @keyframes fill {
   0% {
     opacity: 0;
+    transition: fill .2s linear;
   }
   50% {
     opacity: 0.5;
@@ -88,14 +89,25 @@ body, html {
   }
 }
 
-.main__header h1 {
-  text-align: center;
-}
-
 footer {
   background-color: #353535;
-  padding: 25px;
+  padding: 15px;
   color: white;
+}
+
+@media screen and (min-width: 1280px) {
+  footer {
+    padding-left: 130px;
+  }
+  footer ul {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 90%;
+  }
+  footer ul a {
+    margin: 30px 20px;
+  }
 }
 
 h3 {
@@ -107,7 +119,7 @@ h3 {
 
 ul {
   list-style-type: none;
-  padding-left: 10px;
+  padding-left: 0px;
 }
 
 ul li {
@@ -116,6 +128,11 @@ ul li {
 
 ul li a {
   color: white;
+}
+
+ul li a:hover {
+  color: #99E2D0;
+  border-bottom: 1px solid #99E2D0;
 }
 
 .fa-utensils {
@@ -139,6 +156,15 @@ ul li a {
 
 .about p {
   color: #4d4d4d;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 15px 0;
+  margin: auto;
+}
+
+/*header accueil */
+.main__header h1 {
+  text-align: center;
 }
 
 .operation {
@@ -171,21 +197,29 @@ ul li a {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
-  padding: 25px;
-  margin: 15px 20px 15px 30px;
+  padding: 15px;
+  margin: 20px 20px 15px 20px;
   border-radius: 20px;
   box-shadow: 1px 2px 8px 2px #c4c4c4;
   background-color: #f5f5f5;
   cursor: pointer;
+  color: #6b6868;
 }
 
 .operation__steps li p {
-  font-weight: 500;
+  font-weight: bold;
+  margin-left: 20px;
+  color: #000;
+}
+
+.operation__steps li .operation__steps--icon {
+  font-size: 1.2rem;
   margin-left: 20px;
 }
 
 .operation__steps li:hover {
   background: #f2eafb;
+  color: #9356DC;
 }
 
 .operation__steps--number {
@@ -193,17 +227,7 @@ ul li a {
   color: white;
   border-radius: 50%;
   padding: 5px 9px;
-  margin-left: -40px;
-}
-
-.operation__steps--icon {
-  color: #6b6868;
-  font-size: 1.2rem;
-  margin-left: 20px;
-}
-
-.operation__steps--icon:hover {
-  color: #9356DC;
+  margin-left: -30px;
 }
 
 .restaurant__title {
@@ -229,7 +253,7 @@ ul li a {
 
 .card {
   border-radius: 25px;
-  box-shadow: 4px 4px 6px #aaa;
+  box-shadow: 4px 4px 6px #cfcdcd;
   margin: 20px;
   position: relative;
   background: #fff;
@@ -270,10 +294,11 @@ ul li a {
   }
 }
 
-.heart {
+.info-icons {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  vertical-align: top;
 }
 
 .card .main-info {
@@ -283,6 +308,12 @@ ul li a {
 .card .info-icons {
   margin: 0;
   padding: 10px;
+  padding-right: 20px;
+}
+
+.card .info-icons p {
+  margin-top: 2px;
+  font-size: 18px;
 }
 
 .heart h4 {
@@ -379,6 +410,70 @@ ul li a {
   animation: grow 1s ease-in-out 0.15s infinite;
 }
 
+.maps {
+  background: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 5px 5px 0px #dddddd;
+}
+
+.maps__search input {
+  border: none;
+  background: #eaeaea;
+  font-size: 1.1rem;
+  padding: 20px 5px 20px 5px;
+  margin-top: 5px;
+  text-align: center;
+  font-weight: bold;
+  width: 170px;
+}
+
+.btn__about button {
+  transition: all .3s ease-in-out;
+  transform: scale(1);
+  background: linear-gradient(352deg, #9356DC 0%, #FF79DA 100%);
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 15px 20px;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 4px 4px 15px #aaa;
+  cursor: pointer;
+}
+
+.btn__about button:hover {
+  background-color: #ae80e5;
+  transform: scale(1.1);
+}
+
+.new {
+  color: #008766;
+  background: #99E2D0;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+
+.fill {
+  color: #363535;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+}
+
+.fill:hover {
+  animation: fill 0.3s alternate;
+  display: inline-block;
+  opacity: 1;
+  background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
 .main__menu {
   background-color: #f6f6f6;
   border-top-left-radius: 25px;
@@ -401,10 +496,18 @@ ul li a {
   }
 }
 
+.dish {
+  animation: fadein 4s ease-in-out;
+}
+
 @media screen and (min-width: 1280px) {
   .dish {
     width: 400px;
   }
+}
+
+.dessert {
+  animation: fadein 5s ease-in-out;
 }
 
 @media screen and (min-width: 1280px) {
@@ -427,7 +530,7 @@ ul li a {
   right: -50px;
   top: 0;
   opacity: 0;
-  transition: transform 330ms ease-in-out;
+  transition: 530ms;
 }
 
 .cross .fa-check-circle {
@@ -439,68 +542,6 @@ ul li a {
   width: 40px;
   border: 2px solid #99E2D0;
   margin-left: 20px;
-}
-
-.maps {
-  background: #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: inset 0px 5px 5px 0px #dddddd;
-}
-
-.maps__search input {
-  border: none;
-  background: #eaeaea;
-  font-size: 1rem;
-  padding: 20px 5px 20px 5px;
-  margin-top: 5px;
-  text-align: center;
-  width: 150px;
-}
-
-.btn__about button {
-  transition: all .3s ease-in-out;
-  transform: scale(1);
-  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  border: 1px solid transparent;
-  border-radius: 30px;
-  padding: 10px 20px;
-  color: #fff;
-  font-weight: bold;
-  box-shadow: 4px 4px 15px #aaa;
-  cursor: pointer;
-}
-
-.btn__about button:hover {
-  background-color: #ae80e5;
-  transform: scale(1.1);
-}
-
-.new {
-  color: #008766;
-  background: #99E2D0;
-  padding: 4px;
-  border-radius: 5px;
-  position: absolute;
-  right: 1%;
-  top: 5%;
-}
-
-.fill {
-  color: #363535;
-  cursor: pointer;
-}
-
-.fill:hover {
-  animation: fill 0.3s ease-in-out;
-  display: inline-block;
-  opacity: 1;
-  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
 }
 
 .header__img img {
@@ -525,17 +566,18 @@ ul li a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  font-size: 1.4rem;
+  padding: 35px 30px;
 }
 
 @media screen and (min-width: 1280px) {
   .menu__title {
-    padding: 10px 30px;
+    padding: 20px 30px;
   }
 }
 
 .menu__title .fill {
-  font-size: 1.6rem;
+  font-size: 2.3rem;
   padding-right: 5px;
 }
 
@@ -550,8 +592,8 @@ ul li a {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  transition: padding-right 550ms ease-in-out;
-  animation: fadein 3s ease-in-out;
+  transition: padding-right 300ms;
+  animation: fadein 2s ease-in-out;
 }
 
 .meals:hover {
@@ -603,10 +645,10 @@ ul li a {
 }
 
 .btn__order button {
-  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: linear-gradient(352deg, #9356DC 0%, #FF79DA 100%);
   border: 1px solid transparent;
   border-radius: 30px;
-  padding: 10px 20px;
+  padding: 15px 20px;
   color: #fff;
   font-weight: bold;
   box-shadow: 4px 4px 15px #aaa;

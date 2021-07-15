@@ -33,18 +33,21 @@ font-family: Shrikhand, Roboto, sans-serif;
     padding: 0 5%;
   }
 }
-.heart {
+.info-icons {
   display: flex;
   justify-content: space-between;
-  align-items: center;
- 
-  
+align-items: center;
+vertical-align: top;
 }
 .card .main-info {
   @include card-figure;
 }
 .card .info-icons {
   @include card-figcaption;
+  p{
+    margin-top: 2px;
+    font-size: 18px;
+  }
 }
 .heart h4 {
   margin: 0;

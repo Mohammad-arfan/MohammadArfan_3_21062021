@@ -1,8 +1,22 @@
 footer {
   background-color: #353535;
-  padding: 25px;
+  padding: 15px;
   color: white;
+@include desktop{
+padding-left: 130px;
+  ul{
+    display: flex;
+    text-align: center;
+    justify-content:space-between;
+    width: 90%;
+ a{
+   margin: 30px 20px;
+   
+ }
+  }
 }
+}
+
   h3 {
     font-family: "Shrikhand", "sans-serif";
     padding: 5px 0 10px 10px;
@@ -11,13 +25,17 @@ footer {
   }
   ul {
     list-style-type: none;
-    padding-left: 10px;
+    padding-left: 0px;
 
     li {
       padding: 5px 0 5px 0;
 
       a {
         color: white;
+        &:hover{
+          color: $color-tertiary;
+          border-bottom: 1px solid $color-tertiary;
+        }
       }
     }
   }

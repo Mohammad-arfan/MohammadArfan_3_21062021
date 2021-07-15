@@ -15,13 +15,13 @@
   }
 }
 .dish {
- 
+    animation: fadein 4s ease-in-out;
   @include desktop {
     width: 400px;
   }
 }
 .dessert {
-  
+     animation: fadein 5s ease-in-out;
   @include desktop {
     width: 400px;
   }
