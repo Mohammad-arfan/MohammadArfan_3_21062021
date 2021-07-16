@@ -16,9 +16,12 @@
   @include desktop {
     padding: 20px 30px;
   }
-  .fill{
-    font-size: 2.3rem;
+  .card__like{
+    font-size: 2rem;
     padding-right: 5px;
+    text-align: center;
+    padding-top: 5px;
+    
   }
   
 }

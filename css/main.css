@@ -321,6 +321,10 @@ ul li a:hover {
   font-size: 1.5rem;
 }
 
+.card__like--front {
+  background-color: #fff !important;
+}
+
 .loader {
   background: -webkit-linear-gradient(#FFFFFF, #99E2D0, #FF79DA, #9356DC);
   width: 100%;
@@ -461,7 +465,7 @@ ul li a:hover {
 .fill {
   color: #363535;
   cursor: pointer;
-  transition: all .1s ease-in-out;
+  transition: all .25s ease-in-out;
 }
 
 .fill:hover {
@@ -472,6 +476,54 @@ ul li a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+}
+
+.menu__btn {
+  height: 3rem;
+  width: 3rem;
+  background-color: transparent;
+  border: transparent 0px solid;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  background-color: black;
+}
+
+.menu__btn:hover::before {
+  opacity: 1;
+}
+
+.menu__btn::before {
+  opacity: 0;
+  transition: 0.5s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+}
+
+.menu__like {
+  transition-duration: .25s;
+  background-color: #f6f6f6ff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: lighten;
+}
+
+.menu__btn:hover .menu__like--noBg {
+  opacity: 0;
 }
 
 .main__menu {
@@ -566,8 +618,8 @@ ul li a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.4rem;
-  padding: 35px 30px;
+  font-size: 1.1rem;
+  padding: 35px 20px 30px 20px;
 }
 
 @media screen and (min-width: 1280px) {
@@ -576,9 +628,11 @@ ul li a:hover {
   }
 }
 
-.menu__title .fill {
-  font-size: 2.3rem;
+.menu__title .card__like {
+  font-size: 2rem;
   padding-right: 5px;
+  text-align: center;
+  padding-top: 5px;
 }
 
 .meals {

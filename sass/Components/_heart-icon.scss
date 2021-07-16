@@ -1,7 +1,7 @@
 .fill {
   color: #363535; 
   cursor: pointer;
-  transition: all .1s ease-in-out;
+  transition: all .25s ease-in-out;
   &:hover {
     animation: fill 0.3s alternate;
     display: inline-block;
