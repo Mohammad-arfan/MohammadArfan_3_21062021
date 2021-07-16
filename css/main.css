@@ -462,22 +462,6 @@ ul li a:hover {
   top: 5%;
 }
 
-.fill {
-  color: #363535;
-  cursor: pointer;
-  transition: all .25s ease-in-out;
-}
-
-.fill:hover {
-  animation: fill 0.3s alternate;
-  display: inline-block;
-  opacity: 1;
-  background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-}
-
 .menu__btn {
   height: 3rem;
   width: 3rem;
