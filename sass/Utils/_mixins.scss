@@ -16,7 +16,7 @@
 }
 @mixin btn-about {
  background:linear-gradient(352deg, $color-primary 0%,$color-secondary 100%);
-  border: 1px solid transparent;
+  border:none;
   border-radius: 30px;
   padding: 15px 20px;
   color: #fff;
