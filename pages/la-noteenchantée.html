@@ -30,13 +30,14 @@
     />
   </head>
   <body>
-    <!--Header-->
+    <!-- Header -->
     <header class="menu__header">
       <div class="arrow">
         <a href="../index.html"><i class="fas fa-arrow-left"></i></a>
       </div>
       <h1><a href="../index.html">ohmyfood</a></h1>
     </header>
+
     <main class="main">
       <div class="header__img">
         <img
@@ -47,13 +48,9 @@
       <div class="main__menu">
         <div class="menu__title">
           <h2>La note enchantée</h2>
-          <div class="menu__btn card__btn">
-            <i
-              class="card__like menu__like menu__like--noBg far fa-heart fa-2x"
-            ></i>
-            <i
-              class="card__like menu__like menu__like--bg fas fa-heart fa-2x"
-            ></i>
+          <div class="fa-stack div-icone__menus">
+            <i class="heart-inside fas fa-heart fa-stack-1x"></i>
+            <i class="heart-outside far fa-heart fa-stack-1x"></i>
           </div>
         </div>
         <div class="full__menu">
@@ -180,10 +177,10 @@
           </div>
         </div>
       </div>
-      <div>
-        <span class="btn__order">
-          <button>Commander</button>
-        </span>
+      <div class="btn__commander">
+        <a href="../../index.html" class="btn">
+          <p>Commander</p>
+        </a>
       </div>
     </main>
     <!-- Footer -->

@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 1rem;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+li {
+  list-style-type: none;
+}
+h2 {
+  margin: 0;
+}
+h6 {
+  margin: 0;
+}
+h1, h6 {
+  font-family: Shrikhand, Roboto, sans-serif;
+}
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn{
+    @include button;
+}
+
+.heart-inside{
+    opacity: 0;
+    color: transparent;
+}
+.div-icone{
+    line-height: initial !important;
+    margin-left: initial;
+    &:hover{
+        @include anim-hearts;
+    }
+    &:active{
+        @include anim-hearts;
+    }
+}
+
+
+footer {
+@include footer;
+  }
+
+    .fa-utensils {
+      margin-right: 12px;
+    }
+    .fa-hands-helping {
+      margin-right: 5px;
+    }

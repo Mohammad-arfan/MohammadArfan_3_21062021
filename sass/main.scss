@@ -1,5 +1,7 @@
-@import "./Base/index", "./Base/typography";
-@import "./Utils/variables", "./Utils/mixins", "./Utils/functions", "./Utils/keyframes", "./Utils/breakpoint";
-@import  "./Layout/footer", "./Layout/accueil", "./Layout/resto", "./Layout/loader";
-@import "./Components/maps", "./Components/btn-about", "./Components/btn-card", "./Components/heart";
-@import "./page/menu", "./page/menus-header";
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./base/global";
+@import "./page/page-accueil";
+@import "./page/menus";
+@import "./utils/keyframes";
+
