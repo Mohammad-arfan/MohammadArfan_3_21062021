@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @mixin header{
     //En-tête
     display: flex;
@@ -5,6 +6,33 @@
     align-items: center;
     width: 100%;
     height: 10vh;
+=======
+ @mixin maps {
+  border: none;
+  background: #eaeaea;
+  font-size: 1.1rem;
+  padding: 20px 5px 20px 5px;
+  margin-top: 5px;
+  text-align: center;
+  font-weight: bold;
+  width: 170px;
+}
+@mixin about {
+  background: #f6f6f6;
+  text-align: center;
+  width: 100%;
+  padding: 40px 0;
+}
+@mixin btn-about {
+ background:linear-gradient(352deg, $color-primary 0%,$color-secondary 100%);
+  border:none;
+  border-radius: 30px;
+  padding: 15px 20px;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 4px 4px 15px #aaa;
+  cursor: pointer;
+>>>>>>> fada55ba17727aab5da8cbaaa7fa8993a6fcc18e
   
 }
 
