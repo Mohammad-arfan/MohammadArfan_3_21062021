@@ -212,15 +212,4 @@
         }
     }
 }
-.div-icone{
-    &__menus{
-        font-size: 1.5em;
-        line-height: 2em;
-        &:hover{
-            @include anim-hearts;
-        }
-        &:active{
-            @include anim-hearts;
-        }
-    }
-}
+
